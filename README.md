@@ -1,8 +1,4 @@
-# LayerEdit
-This is the official implementation for paper "LayerEdit: Disentangled Multi-Object Editing via Conflict-Aware Multi-Layer Learning".
-
-
-# LayerEdit (AAAI2026)
+# LayerEdit (AAAI-2026)
 This repository contains the official implementation of the paper [LayerEdit: Disentangled Multi-Object Editing via Conflict-Aware Multi-Layer Learning].
 
 
