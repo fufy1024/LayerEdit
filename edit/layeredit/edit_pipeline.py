@@ -40,7 +40,7 @@ def edit_pipe(
     model,
     num_ddim_steps,
     self_replace_steps=0.1,
-    cross_replace_steps=0.4,
+    cross_replace_steps=0.5,
     masa_control=False,
     ID_LorA=None,
     device=None,
