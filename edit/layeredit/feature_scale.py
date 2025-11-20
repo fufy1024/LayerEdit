@@ -37,7 +37,6 @@ def mask_resize(mask, scale=1, pro="zoom"):
             mask1 = torch.zeros(mask[None, None, :, :].shape).cuda()
             mask1[:, :, x_S : x_S + new_res, y_S : y_S + new_res] = mask_new
 
-        print("mask1", mask1.shape)
     return mask1.squeeze(), x_c, y_c
 
 
@@ -126,7 +125,6 @@ def feature_move(attn, mask, move_scale=0, move_direction="left"):
 def resize_image_with_mask(img, mask, scale=2):
     # input : img:(512, 512, 3) ; mask:(512, 512) （numpy）
     # output: img_blackboard:(512, 512, 3) ; mask_blackboard:(512, 512) （numpy）；
-    print("输入image", img.shape, mask.shape)
     if scale == 1:
         return img, mask, None
     img_blackboard = img.copy()  # canvas
