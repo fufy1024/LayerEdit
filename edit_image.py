@@ -10,7 +10,7 @@ NUM_DDIM_STEPS = 50
 edit_path  = './output/edit.png'    
 save_path = './output/save.png'
 pipe, inversion, device = init_model(
-    model_path="/mnt/bn/fufengy-lf/huggingface_models/stable-diffusion-xl-base-1.0",
+    model_path="stabilityai/stable-diffusion-xl-base-1.0",
     num_ddim_steps=NUM_DDIM_STEPS,
 )
 latent_list, latent, prompt_str, prompt_embeds, pooled_prompt_embeds = inverse(
