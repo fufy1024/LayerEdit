@@ -80,10 +80,9 @@ edit(
 python edit_image.py
 ```
 
+## 📝 Citation 
 
-## Citation
-
-🌟 If you find our work helpful, please consider citing our paper and leaving valuable stars
+If you find our work helpful, please consider citing our paper and leaving valuable stars
 
 ```
 @article{fu2025layeredit,
