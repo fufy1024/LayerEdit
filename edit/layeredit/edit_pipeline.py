@@ -112,7 +112,7 @@ def edit_pipe(
         timesteps_args["alpha_bar_t"], k=5, i_thres=40
     )
     lb.Q_remove_rate = get_remove_rate_snr(
-        timesteps_args["alpha_bar_t"], k=5, i_thres=10
+        timesteps_args["alpha_bar_t"], k=5, i_thres=20
     )
     lb.ID_LorA = torch.tensor([0] * (len(prompts) - 1)).to(
         device
