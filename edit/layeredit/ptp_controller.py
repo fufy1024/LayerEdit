@@ -172,8 +172,8 @@ class AttentionControlEdit(AttentionStore, abc.ABC):
     def replace_self_attention_kv(self, q, k, v, heads, Layer_S=1):  # for masactrl
         if (
             self.layer_fusion is not None
-            and self.self_layer >= self.layer_fusion.masa_start_layer
-            and self.cur_step >= self.layer_fusion.masa_start_step
+            and self.self_layer >= self.masa_start_layer
+            and self.cur_step >= self.masa_start_step
         ):
             kv = torch.cat([k, v], dim=0)
             split_kv = kv.split(heads, dim=0)
@@ -236,6 +236,7 @@ class AttentionControlEdit(AttentionStore, abc.ABC):
         self.num_self_replace = int(num_steps * self_replace_steps[0]), int(num_steps * self_replace_steps[1])
         self.local_blend = local_blend
         self.masa_control = masa_control
+        self.masa_start_step, self.masa_start_layer = 10, 10
         self.last_save = None
         self.self_layer = 0
         self.cross_layer = 0
