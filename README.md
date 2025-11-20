@@ -10,9 +10,11 @@ Text-driven multi-object image editing which aims to precisely modify multiple o
 
 - [2025/11/08] 🎉 LayerEdit has been accepted to AAAI 2026! 🎉
 - [2025/11/20]  We release the code for LayerEdit! Let's edit together! 😍
-  
-## ToDo
-- [ ] **Release inference code that combines grounding-sam (more accurate segmentation, but potentially slower, and at the same time, grounding-sam has no reasoning ability).** 
+
+## TODO List 📅
+- [x] Release environment setup
+- [x] Release inference code
+- [ ] Release inference code that combines segmentation models (more accurate segmentation, but potentially slower). 
 
 ## ⚡️ Quick Start
 
