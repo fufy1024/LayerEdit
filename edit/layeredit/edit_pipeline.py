@@ -50,7 +50,6 @@ def edit_pipe(
     move_direction=[],
     move_scale=[],
 ):  
-    #print(model.scheduler.betas.device, model.scheduler.device)
     timesteps = model.scheduler.timesteps.to(model.scheduler.betas.device)
     beta_t, alpha_t, alpha_bar_t = (
         model.scheduler.betas[timesteps],
