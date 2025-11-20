@@ -258,7 +258,6 @@ class sdxl(StableDiffusionXLPipeline):
 
                 # predict the noise residual
                 added_cond_kwargs = {"text_embeds": add_text_embeds, "time_ids": add_time_ids}
-                #print('latent_model_input', latent_model_input.shape,prompt_embeds.shape,add_text_embeds.shape,add_time_ids.shape)
                 noise_pred = self.unet(
                     latent_model_input,
                     t,
