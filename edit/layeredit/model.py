@@ -132,10 +132,6 @@ class LayerFusion:
         self.object_mask = object_mask
         self.object_mask_all = object_mask_all
         self.remove_mask_rate = generate_mask_Bernoulli(DIM, r=1)
-
         self.alpha = self.object_mask.clone()
         self.sg_loss_rescale = 1000
-
-        self.masa_start_step, self.masa_start_layer = 30, 10
-
         self.tokenizer = tokenizer
